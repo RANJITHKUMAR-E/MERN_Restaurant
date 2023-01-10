@@ -1,0 +1,80 @@
+[
+    {
+        "name": "CHICKEN DELIGHT WORK ",
+        "varients": [ "small", "medium", "large" ],
+        "prices": [ {
+            "small": 200,
+            "medium": 350,
+            "large": 400
+        }
+        ],
+        "category": "non-veg",
+        "image": "https://www.dominos.co.in/files/items/MicrosoftTeams-image_(14).png",
+        "desc": "Mmm! Barbeque chicken with a topping of golden corn loaded with extra cheese. Worth its weight in gold!"
+    },
+    {
+        "name": "NON VEG SUPREME",
+        "varients": [ "small", "medium", "large" ],
+        "prices": [ {
+            "small": 360,
+            "medium": 650,
+            "large": 800
+        }
+        ],
+        "category": "non-veg",
+        "image": "https://www.dominos.co.in/files/items/MicrosoftTeams-image_(13).png",
+        "desc": "Bite into supreme delight of Black Olives, Onions, Grilled Mushrooms, Pepper BBQ Chicken, Peri-Peri Chicken, Grilled Chicken Rashers"
+    },
+    {
+        "name": "INDI CHICKEN TIKKA",
+        "varients": [ "small", "medium", "large" ],
+        "prices": [ {
+            "small": 360,
+            "medium": 550,
+            "large": 700
+        }
+        ],
+        "category": "non-veg",
+        "image": "https://www.dominos.co.in//files/items/MicrosoftTeams-image_(18).png",
+        "desc": "The wholesome flavour of tandoori masala with Chicken tikka I onion I red paprika I mint mayo"
+    },
+    {
+        "name": "CHICKEN DELIGHT WORK ",
+        "varients": [ "small", "medium", "large" ],
+        "prices": [ {
+            "small": 200,
+            "medium": 350,
+            "large": 400
+        }
+        ],
+        "category": "non-veg",
+        "image": "https://www.dominos.co.in/files/items/MicrosoftTeams-image_(14).png",
+        "desc": "Mmm! Barbeque chicken with a topping of golden corn loaded with extra cheese. Worth its weight in gold!"
+    },
+    {
+        "name": "NON VEG SUPREME",
+        "varients": [ "small", "medium", "large" ],
+        "prices": [ {
+            "small": 360,
+            "medium": 650,
+            "large": 800
+        }
+        ],
+        "category": "non-veg",
+        "image": "https://www.dominos.co.in/files/items/MicrosoftTeams-image_(13).png",
+        "desc": "Bite into supreme delight of Black Olives, Onions, Grilled Mushrooms, Pepper BBQ Chicken, Peri-Peri Chicken, Grilled Chicken Rashers"
+    },
+    {
+        "name": "INDI CHICKEN TIKKA",
+        "varients": [ "small", "medium", "large" ],
+        "prices": [ {
+            "small": 360,
+            "medium": 550,
+            "large": 700
+        }
+        ],
+        "category": "non-veg",
+        "image": "https://www.dominos.co.in//files/items/MicrosoftTeams-image_(18).png",
+        "desc": "The wholesome flavour of tandoori masala with Chicken tikka I onion I red paprika I mint mayo"
+    }
+]
