@@ -2,6 +2,7 @@ const {default: mongoose}=require("mongoose");
 
 var mongoURL='mongodb+srv://ranjith:ranjith@cluster0.gvlusqx.mongodb.net/MERN_Food';
 
+mongoose.set("strictQuery", false);
 mongoose.connect(mongoURL, {useUnifiedTopology: true, useNewUrlParser: true})
 
 var db=mongoose.connection;
