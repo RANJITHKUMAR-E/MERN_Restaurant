@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/MERN_Restaurant/client/static/css/main.34865a10.css",
+    "main.js": "/MERN_Restaurant/client/static/js/main.232158e0.js",
+    "static/js/787.06ecf569.chunk.js": "/MERN_Restaurant/client/static/js/787.06ecf569.chunk.js",
+    "index.html": "/MERN_Restaurant/client/index.html",
+    "main.34865a10.css.map": "/MERN_Restaurant/client/static/css/main.34865a10.css.map",
+    "main.232158e0.js.map": "/MERN_Restaurant/client/static/js/main.232158e0.js.map",
+    "787.06ecf569.chunk.js.map": "/MERN_Restaurant/client/static/js/787.06ecf569.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.34865a10.css",
+    "static/js/main.232158e0.js"
+  ]
+}
