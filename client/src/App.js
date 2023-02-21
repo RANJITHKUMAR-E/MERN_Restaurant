@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import bootstrap from '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import "bootstrap"
@@ -13,6 +12,7 @@ import Cartscreen from './pages/CartPage';
 import RegisterPage from './pages/RegisterPage';
 import LoginPage from './pages/LoginPage';
 import OrdersPage from './pages/OrdersPage';
+import AdminPage from './pages/Admin/AdminPage';
 
 function App() {
   return (
@@ -26,6 +26,7 @@ function App() {
           <Route path="/login" exact element={<LoginPage />} />
           <Route path="/register" exact element={<RegisterPage />} />
           <Route path="/orders" exact element={<OrdersPage />} />
+          <Route path="/admin/*" exact element={<AdminPage />} />
         </Routes>
       </BrowserRouter>
     </div>

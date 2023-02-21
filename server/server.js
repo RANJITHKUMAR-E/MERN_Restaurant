@@ -3,6 +3,7 @@ const {config}=require("react-transition-group");
 const pizza = require('./models/pizzaModel')
 
 const db=require("./db")
+
 const app=express();
 app.use(express.json());
 
@@ -12,10 +13,13 @@ app.use(cors())
 const pizzaRoute=require("./routes/pizzaRoute")
 const userRoute=require("./routes/userRoute")
 const orderRoute=require("./routes/ordersRoute")
+const adminRoute=require("./routes/adminRoute")
+
 
 app.use('/api/pizzas/',pizzaRoute)
 app.use('/api/users/', userRoute)
 app.use('/api/orders/', orderRoute)
+app.use('/api/admin/', adminRoute)
 
 app.get("/", (req, res) =>
 {

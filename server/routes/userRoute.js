@@ -33,9 +33,7 @@ router.post("/login", async (req, res) =>
         else {
             return res.status(400).json({meaasage: 'USER LOGIN FAILED !!'})
         }
-    } catch(error) {
-
-    }
+    } catch(error) {}
 })
 
 module.exports=router

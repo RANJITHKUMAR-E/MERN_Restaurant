@@ -4,12 +4,12 @@ import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { loginUser } from "../actions/userActions";
 import Loading from "../components/Loading";
-import Success from "../components/Success";
 import Error from "../components/Error";
 
 export default function LoginPage() {
   const [email, setmail] = useState("");
   const [password, setpassword] = useState("");
+
   const loginstate = useSelector((state) => state.loginUserReducer);
   const { loading, error } = loginstate;
 
