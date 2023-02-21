@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { loginUser } from "../actions/userActions";
 import Loading from "../components/Loading";
 import Error from "../components/Error";
+import { Link } from "react-router-dom";
 
 export default function LoginPage() {
   const [email, setmail] = useState("");
@@ -66,9 +67,9 @@ export default function LoginPage() {
             <br />
             <h5 className="m-2">
               Having an account ?{" "}
-              <a href="/register" style={{ textDecoration: "none" }}>
+              <Link to="/register" style={{ textDecoration: "none" }}>
                 SignUp
-              </a>
+              </Link>
             </h5>
           </div>
         </div>

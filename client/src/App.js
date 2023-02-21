@@ -17,14 +17,14 @@ import AdminPage from './pages/Admin/AdminPage';
 function App() {
   return (
     <div className="App">
-      <Navbar />
 
       <BrowserRouter>
+        <Navbar />
         <Routes>
-          <Route path="/" exact element={<HomePage />} />
-          <Route path="/cart" exact element={<Cartscreen />} />
-          <Route path="/login" exact element={<LoginPage />} />
-          <Route path="/register" exact element={<RegisterPage />} />
+          <Route path="/" element={<HomePage />} />
+          <Route path="/cart" element={<Cartscreen />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/register" element={<RegisterPage />} />
           <Route path="/orders" exact element={<OrdersPage />} />
           <Route path="/admin/*" exact element={<AdminPage />} />
         </Routes>

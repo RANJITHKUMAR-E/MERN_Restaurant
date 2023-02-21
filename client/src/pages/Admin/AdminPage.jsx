@@ -13,18 +13,18 @@ export default function AdminPage() {
         className="links justify-content-center"
         style={{ display: "flex", padding: "10px" }}
       >
-        <a style={{ padding: "10px 20px" }} href="/admin/userslist">
+        <Link style={{ padding: "10px 20px" }} to="/admin/userslist">
           Users List
-        </a>
-        <a style={{ padding: "10px 20px" }} href="/admin/pizzaslist">
+        </Link>
+        <Link style={{ padding: "10px 20px" }} to="/admin/pizzaslist">
           PizzasList
-        </a>
-        <a style={{ padding: "10px 20px" }} href="/admin/addpizza">
+        </Link>
+        <Link style={{ padding: "10px 20px" }} to="/admin/addpizza">
           Add Pizzas
-        </a>
-        <a style={{ padding: "10px 20px" }} href="/admin/orderlist">
+        </Link>
+        <Link style={{ padding: "10px 20px" }} to="/admin/orderlist">
           Order List
-        </a>
+        </Link>
       </div>
 
       <div className="panels w-100 justify-content-center">

@@ -4,6 +4,7 @@ import { registerUser } from "../actions/userActions";
 import Loading from "../components/Loading";
 import Success from "../components/Success";
 import Error from "../components/Error";
+import { Link } from "react-router-dom";
 
 export default function RegisterPage() {
   const [name, setname] = useState("");
@@ -86,9 +87,9 @@ export default function RegisterPage() {
             <br />
             <h5 className="mt-2">
               Already User ?{" "}
-              <a href="/login" style={{ textDecoration: "none" }}>
+              <Link to="/login" style={{ textDecoration: "none" }}>
                 login
-              </a>
+              </Link>
             </h5>
           </div>
         </div>

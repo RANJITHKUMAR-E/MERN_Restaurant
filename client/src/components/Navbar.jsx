@@ -1,6 +1,7 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { logoutUser } from "../actions/userActions";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const cartstate = useSelector((state) => state.cartReducer);
@@ -10,9 +11,9 @@ export default function Navbar() {
   return (
     <div>
       <nav className="navbar navbar-expand-lg shadow p-3 mb-5 bg-white rounded ">
-        <a className="navbar-brand" href="/">
+        <Link className="navbar-brand" to="/">
           PIZZA ZONE
-        </a>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -28,7 +29,8 @@ export default function Navbar() {
           <ul className="navbar-nav mr-auto">
             {curUser ? (
               <div className="dropdown mt-2">
-                <a
+                <Link
+                  to="#"
                   style={{ color: "black", textDecoration: "none" }}
                   className="dropdown-toggle"
                   type="button"
@@ -38,14 +40,15 @@ export default function Navbar() {
                   aria-expanded="false"
                 >
                   {curUser.name}
-                </a>
-                <a
-                  href="/orders"
+                </Link>
+
+                <Link
+                  to="/orders"
                   className="btn"
                   style={{ color: "black", textDecoration: "none" }}
                 >
                   Orders
-                </a>
+                </Link>
                 <button
                   className="btn"
                   onClick={() => {
@@ -58,23 +61,23 @@ export default function Navbar() {
                   className="dropdown-menu"
                   aria-labelledby="dropdownMenuButton"
                 >
-                  <a className="dropdown-item" href="#">
+                  <Link className="dropdown-item" to="/orders">
                     Order
-                  </a>
-                  <a className="dropdown-item" href="#">
+                  </Link>
+                  <Link className="dropdown-item" to="/">
                     Logout
-                  </a>
+                  </Link>
                 </div>
               </div>
             ) : (
               <li className="nav-item active">
-                <a className="nav-link" href="/login">
+                <Link className="nav-link" to="/login">
                   Login
-                </a>
+                </Link>
               </li>
             )}
             <li className="nav-item">
-              <a className="nav-link" href="/cart">
+              <Link className="nav-link" to="/cart">
                 Cart
                 {cartstate.cartItems.length > 0 ? (
                   <span
@@ -93,7 +96,10 @@ export default function Navbar() {
                 ) : (
                   " "
                 )}
-              </a>
+              </Link>
+            </li>
+            <li>
+              <Link to="/admin">A</Link>
             </li>
           </ul>
         </div>
